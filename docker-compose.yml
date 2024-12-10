@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  servicoa:  # Nome alterado para letras minúsculas
+    build:
+      context: ./servicoA
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  servicob:  # Nome alterado para letras minúsculas
+    build:
+      context: ./servicoB
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+
